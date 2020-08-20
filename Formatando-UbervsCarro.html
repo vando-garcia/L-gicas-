@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Uber vs Carro</title>
+</head>
+
+<body>
+    <h1>Uber vs Carro</h1>
+    <h2>Autor: Vando</h2>
+    <hr>
+    <h2>Uber</h2>
+    <p>Total: R$ 42,68</p>
+
+    <h2>Carro</h2>
+    <script>
+        var totalGasolina = parseFloat(prompt("Digite o custo da gasolina"));
+        var totalEstacionamento = parseFloat(prompt("Valor de estacionamento"));
+        var totalCarro = totalGasolina + totalEstacionamento;
+
+        document.write("Gasolina: R$ " + totalGasolina.toFixed(2).replace(".", ","));
+        document.write("<br>")
+        document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2).replace(".", ","));
+        document.write("<br>");
+        document.write("Total: R$ " + totalCarro.toFixed(2).replace(".", ","));
+    </script>
+
+</body>
+
+</html>

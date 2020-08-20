@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber x Carro . 02</title>
+</head>
+
+<body>
+    <h1>Uber x Carro</h1>
+    <h2>Autor: Vando</h2>
+    <hr>
+    <script>
+
+        function valorReal(valor) {
+            return "R$" + parseFloat(valor).toFixed(2).replace(".", ",");
+        }
+
+        function somaDeValores(gasolina = 0, estacionamento = 0) {
+            var soma = gasolina + estacionamento;
+            return "R$" + parseFloat().toFixed(2).replace(".", ",");
+        }
+
+        function diferencaDeValores() {
+            var valor = prompt("valor do Uber");
+            var gasolina = prompt("valor da gasolina");
+            var estacionamento = prompt("valor do estacionamento");
+
+            var Total = somaDeValores();
+
+            document.write(`
+            Uber: R$ ${valor} <br>
+            Gasolina do Carro: R$ ${gasolina} <br>
+            Etacionamento: R$ ${estacionamento}  <br>
+            Total: ${Total}
+                        
+         `)
+
+        }
+
+        diferencaDeValores();
+    </script>
+
+
+
+
+</body>
+
+</html>

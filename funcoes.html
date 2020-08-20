@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<h1>Funções</h1>
+<h2>Autor: Vando</h2>
+<hr>
+<script>
+
+function adicao(n1, n2) {
+var resultado = n1 + n2;
+return resultado;
+}
+  
+function subtracao(n1, n2) {
+
+return n1 - n2;
+
+}
+
+function calculoDoImc(peso, altura) {
+  var imc = peso / (altura * altura);
+  return imc;
+}
+
+function meuProgramaDoImc() {
+// entrada    
+var n = prompt("Digite seu nome:");
+var p = prompt("Digite o seu peso");
+var a = prompt("Qual e a sua altura");
+
+// processamento
+var imc = calculoDoImc(p, a);
+
+// saida
+document.write(`
+Nome: ${n}  <br>
+Peso: ${p}  <br>
+Altura: ${a} <hr> 
+IMC: ${imc}
+
+`)
+}
+
+meuProgramaDoImc();
+
+
+</script>

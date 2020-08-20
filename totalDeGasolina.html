@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o Total de Gasolina</title>
+</head>
+
+<body>
+    <h1>Uber vs Carro</h1>
+    <h2>Autor: Vando</h2>
+    <hr>
+    <h2>Uber</h2>
+    <p>Total: R$ 42,68</p>
+
+    <h2>Carro</h2>
+    <script>
+        var totalEstacionamento = parseFloat(prompt("Valor de estacionamento"));
+        var distancia = parseFloat(prompt("Qual a distância que será percorrida?"));
+        var autonomia = parseFloat(prompt("Quantos km seu carro faz por litro?"));
+        var precoLitroGasolina = parseFloat(prompt("Qual o preço do litro da gasolina?"));
+
+        var totalGasolina = (distancia / autonomia) * precoLitroGasolina;
+
+        document.write(`
+        Gasolina: R$ ${totalGasolina.toFixed(2).replace(".", ",")}
+        <br>
+        Estacionamento: R$ ${totalEstacionamento.toFixed(2).replace(".", ",")}
+        <br>
+        Total: R$ ${totalGasolina.toFixed(2).replace(".", ",")}        
+        
+        `)
+
+
+
+    </script>
+
+
+</body>
+
+</html>

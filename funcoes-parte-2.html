@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções = Parte 2</title>
+</head>
+
+<body>
+    <h1>Mais sobre funções</h1>
+    <h2>Autor: Vando</h2>
+    <hr>
+    <script>
+
+        function converterParaMaiusculas(texo) {
+            return texo.toUpperCase();
+        }
+
+        function converterParaMinusculas(texto) {
+            return texto.toLowerCase();
+        }
+
+        function formataParaReal(valor) {
+            return "R$" + parseFloat(valor).toFixed(2).replace(".", ",");
+        }
+
+        function dolarParaReal(valor = 0, cotacao = 0) {
+            var resultado = valor * cotacao;
+            return formataParaReal(resultado);
+        }
+    
+        function programaCadastro() {
+            // entrada
+            var nome = prompt("Qual é o seu nome?");
+            var salario = prompt("Qual é oseu salario?");
+
+            //processamento
+            var maiuscula = converterParaMaiusculas(nome);
+            var minuscula = converterParaMinusculas(nome);
+            var salarioEmReais = formataParaReal(salario);
+
+            // saida
+            document.write(`
+            Nome Completo : ${nome} <br>
+            Nome Maiusculo: ${maiuscula} <br>
+            Nome Minusculo: ${minuscula} <br>
+            Salario sem Formatação: ${salario} <br>
+            Salario em Reais: ${salarioEmReais} <br>       
+                      
+         `)
+
+        }
+
+        programaCadastro();
+
+    </script>
+</body>
+
+</html>
